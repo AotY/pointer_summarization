@@ -1,3 +1,5 @@
-export PYTHONPATH=`pwd`
-python training_ptr_gen/train.py >& ../log/training_log &
+#!/usr/bin/env bash
+export CUDA_VISIBLE_DEVICES=7
+
+python training_ptr_gen/train.py >& ../logs/training_log &
 
